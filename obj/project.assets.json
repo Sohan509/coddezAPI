@@ -13070,11 +13070,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\USER\\coddez\\coddez.API\\coddez.API.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\CoddezApp\\coddez.API\\coddez.API.csproj",
       "projectName": "coddez.API",
-      "projectPath": "c:\\Users\\USER\\coddez\\coddez.API\\coddez.API.csproj",
+      "projectPath": "C:\\Users\\USER\\CoddezApp\\coddez.API\\coddez.API.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\USER\\coddez\\coddez.API\\obj\\",
+      "outputPath": "C:\\Users\\USER\\CoddezApp\\coddez.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
