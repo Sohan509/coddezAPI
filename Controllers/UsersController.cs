@@ -46,9 +46,8 @@ namespace coddez.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(int id, UserForUpdateDto userForUpdateDto)
         {
-            if (id != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value)) {
-                return Unauthorized();
-            }
+            // if (id != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
+            //     return Unauthorized();
 
             var userFromRepo = await _repo.GetUser(id);
 
@@ -56,16 +55,15 @@ namespace coddez.API.Controllers
 
             if (await _repo.saveAll())
                 return NoContent();
-
-            throw new Exception($"Updating user {id} failed on save");
+            return Ok(userFromRepo);
         }
 
         [HttpPost("{id}")]
         public async Task<IActionResult> currentUsername(int id, UserForUpdateDto userForUpdateDto)
         {
-            if (id != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value)) {
-                return Unauthorized();
-            }
+            // if (id != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value)) {
+            //     return Unauthorized();
+            // }
 
             var userFromRepo = await _repo.GetUser(id);
 
@@ -73,8 +71,7 @@ namespace coddez.API.Controllers
 
             if (await _repo.saveAll())
                 return NoContent();
-
-            throw new Exception($"Updating user {id} failed on save");
+            return Ok(userFromRepo);
         }
 
         
